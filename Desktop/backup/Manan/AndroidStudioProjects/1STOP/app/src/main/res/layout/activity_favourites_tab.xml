@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:paddingTop="20dp"
+    tools:context="com.appsplanet.onestop.fragment.FavouritesFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkgrey"
+        android:padding="5dp">
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/searchView"
+            android:textCursorDrawable="@drawable/custom_cursorcolor"
+            android:clickable="true"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_searchbar"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/searchView"
+            android:id="@+id/listview_favourites"
+            android:dividerHeight="0.3dp"
+            android:divider="@color/darkBlackGrey"
+            android:padding="5dp"
+            android:layout_margin="5dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_copyright"
+        android:text="@string/copyrightStmt"
+        android:textSize="@dimen/txt_size_extra_small"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/black"
+android:padding="10dp"
+tools:context="com.appsplanet.onestop.fragment.MappingScreenFragment">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:textSize="@dimen/txt_size"
+    android:text="@string/mapping_"
+    android:id="@+id/txt_mappingSpinner"
+    android:layout_margin="20dp"/>
+
+<Switch
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/switch_mapping"
+    android:layout_toRightOf="@id/txt_mappingSpinner"
+    android:layout_alignBottom="@id/txt_mappingSpinner"
+    android:layout_alignParentRight="true"
+    android:layout_alignRight="@id/imgBtn_navigationDrawer"
+    android:layout_marginTop="5dp"
+    android:theme="@style/MySwitch"
+    android:button="@drawable/switch_custom"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layouthide"
+        android:visibility="invisible"
+        android:layout_below="@id/txt_mappingSpinner">
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/greycirclebackground" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/map"
+            android:id="@+id/imgbtn_mapping"
+            android:background="@color/darkBlackGrey"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lightGray"
+            android:layout_below="@id/imgbtn_mapping"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/txt_mapping"
+            android:text="\t\t\t\t\tMap for mapping \n User able to select country \n \t\t\t\t\t\t\t\t\tand city"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_submitMapping"
+            android:background="@drawable/button_rounded"
+            android:text="@string/submit"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="@dimen/btn_dialog_margin"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/ll"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/ll"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="80dp"
+            android:layout_below="@id/txt_mapping">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_small"
+                    android:text="@string/city1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/txt_mappedCity"
+                    android:textSize="@dimen/txt_size_small"
+                    android:text="@string/toronto"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_small"
+                    android:text="@string/country1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/txt_mappedCountry"
+                    android:textSize="@dimen/txt_size_small"
+                    android:text="@string/canada"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_copyright"
+        android:text="@string/copyrightStmt"
+        android:textSize="@dimen/txt_size_extra_small"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>

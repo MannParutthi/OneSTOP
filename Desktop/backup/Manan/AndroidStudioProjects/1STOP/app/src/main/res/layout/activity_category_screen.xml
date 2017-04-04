@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_category_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/black"
+    tools:context="com.appsplanet.onestop.CategoryScreenActivity">
+
+    <include
+        android:id="@+id/layoutHeader"
+        layout="@layout/layout_header"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_copyright"
+        android:text="@string/copyrightStmt"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_size_extra_small"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/txt_copyright"
+        android:id="@+id/btn_gotoNext"
+        android:background="@drawable/button_rounded"
+        android:text="@string/submit"
+        android:textSize="@dimen/txt_size_small"
+        android:textColor="@color/white"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_category"
+        android:layout_below="@id/layoutHeader"
+        android:id="@+id/txt_choosecategory"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        android:textSize="@dimen/txt_size"
+        android:layout_centerHorizontal="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btn_gotoNext"
+        android:id="@+id/scrollView"
+        android:layout_below="@id/txt_choosecategory">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_marginLeft="19dp">
+
+            <CheckBox
+                android:id="@+id/chkbox_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:layout_marginTop="5dp"
+                android:button="@drawable/checkbox_custom"
+                android:text="@string/male"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_hint" />
+
+            <CheckBox
+                android:id="@+id/chkbox_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:layout_marginTop="5dp"
+                android:button="@drawable/checkbox_custom"
+                android:text="@string/female"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_hint" />
+            <CheckBox
+                android:id="@+id/chkbox_lgbt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:layout_marginTop="5dp"
+                android:button="@drawable/checkbox_custom"
+                android:text="@string/lgbt"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_hint" />
+            <CheckBox
+                android:id="@+id/chkbox_friendship"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:paddingRight="5dp"
+                android:button="@drawable/checkbox_custom"
+                android:text="@string/friendship"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_hint" />
+            <CheckBox
+                android:id="@+id/chkbox_companionship"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:paddingRight="5dp"
+                android:button="@drawable/checkbox_custom"
+                android:text="@string/companionship"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_hint" />
+            <CheckBox
+                android:id="@+id/chkbox_dinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:button="@drawable/checkbox_custom"
+                android:text="@string/dinner"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_hint" />
+            <CheckBox
+                android:id="@+id/chkbox_hangout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:button="@drawable/checkbox_custom"
+                android:text="@string/hangout"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_hint" />
+            <CheckBox
+                android:id="@+id/chkbox_singleParent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:paddingRight="5dp"
+                android:button="@drawable/checkbox_custom"
+                android:text="@string/singleParent"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_hint"/>
+            <CheckBox
+                android:id="@+id/chkbox_divorced"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:layout_marginTop="5dp"
+                android:button="@drawable/checkbox_custom"
+                android:text="@string/divorced"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_hint" />
+            <CheckBox
+                 android:id="@+id/chkbox_widowed"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:paddingTop="5dp"
+                 android:paddingBottom="5dp"
+                 android:layout_marginTop="5dp"
+                 android:paddingLeft="10dp"
+                 android:paddingRight="5dp"
+                 android:button="@drawable/checkbox_custom"
+                 android:text="@string/widowed"
+                 android:textColor="@color/white"
+                 android:textSize="@dimen/txt_size_hint" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

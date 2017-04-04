@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/black"
+android:padding="10dp"
+tools:context="com.appsplanet.onestop.fragment.UnsubscribeScreen1Fragment">
+
+<RadioGroup
+    android:id="@+id/rdg_selectduration"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@id/txt_ageConfirm"
+    android:layout_margin="@dimen/rdgUnsubscribeScreen1"
+    android:layout_centerHorizontal="true">
+
+    <RadioButton
+        android:id="@+id/rdb_1month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:checked="true"
+        android:button="@drawable/radiobtn_custom"
+        android:text="@string/_1_month"
+        android:paddingTop="@dimen/radiobtn_padding"
+        android:paddingBottom="@dimen/radiobtn_padding"
+        android:paddingLeft="@dimen/rdbUnsubscribeScreen1"
+        android:paddingRight="@dimen/radiobtn_padding"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/radiobtn_margin_left"
+        android:textSize="@dimen/txt_size_hint" />
+
+    <RadioButton
+        android:id="@+id/rdb_3months"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/rdbUnsubscribeScreen1"
+        android:button="@drawable/radiobtn_custom"
+        android:text="@string/_3_months"
+        android:paddingTop="@dimen/radiobtn_padding"
+        android:paddingBottom="@dimen/radiobtn_padding"
+        android:paddingLeft="@dimen/rdbUnsubscribeScreen1"
+        android:paddingRight="@dimen/radiobtn_padding"
+        android:layout_marginLeft="@dimen/radiobtn_margin_left"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_size_hint" />
+
+    <RadioButton
+        android:id="@+id/rdb_6months"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/rdbUnsubscribeScreen1"
+        android:button="@drawable/radiobtn_custom"
+        android:text="@string/_6_months"
+        android:paddingTop="@dimen/radiobtn_padding"
+        android:paddingBottom="@dimen/radiobtn_padding"
+        android:paddingLeft="@dimen/rdbUnsubscribeScreen1"
+        android:paddingRight="@dimen/radiobtn_padding"
+        android:layout_marginLeft="@dimen/radiobtn_margin_left"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_size_hint" />
+
+</RadioGroup>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/txt_sendmailtoadmintounsubscribe"
+    android:textSize="@dimen/txt_size_hint"
+    android:textColor="@color/white"
+    android:layout_margin="@dimen/txtmarginUnsubscribeScreen1"
+    android:layout_below="@id/rdg_selectduration"
+    android:text="@string/send_an_email_to_admin_to_unsubscribe_your_account"/>
+
+<Button
+    android:id="@+id/btn_nextunsubscribescreen"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/txt_sendmailtoadmintounsubscribe"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="@dimen/btn_margin"
+    android:background="@drawable/button_rounded"
+    android:text="@string/next"
+    android:textSize="@dimen/txt_size_small"
+    android:textColor="@color/white" />
+
+
+</RelativeLayout>

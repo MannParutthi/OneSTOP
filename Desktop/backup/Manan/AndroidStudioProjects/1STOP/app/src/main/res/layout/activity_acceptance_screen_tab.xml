@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/black"
+android:padding="10dp"
+tools:context="com.appsplanet.onestop.fragment.AcceptanceScreenFragment">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:textSize="@dimen/txt_size"
+    android:text="@string/itsaMatch"
+    android:id="@+id/txt_itsaMatch"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp" />
+
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:layout_marginTop="70dp"
+    android:src="@drawable/itsamatchbackground"
+    android:layout_below="@id/txt_itsaMatch" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:id="@+id/llpics"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txt_itsaMatch">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile"
+                android:layout_marginRight="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_size"
+                android:textColor="@color/white"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/you"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_size"
+                android:textColor="@color/white"
+                android:paddingTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/mina"/>
+
+         </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/llbtn"
+        android:layout_below="@id/llpics"
+        android:padding="30dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_chat"
+            android:textColor="@color/white"
+            android:text="@string/chat"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_rounded"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_videocall"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:text="@string/videocall"
+            android:background="@drawable/button_roundborder"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_copyright"
+        android:text="@string/copyrightStmt"
+        android:textSize="@dimen/txt_size_extra_small"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/backarrowwhite"
+        android:padding="20dp"
+        android:id="@+id/imgbtn_back"
+        android:layout_above="@id/txt_copyright"
+        android:background="@color/black"/>
+
+</RelativeLayout>

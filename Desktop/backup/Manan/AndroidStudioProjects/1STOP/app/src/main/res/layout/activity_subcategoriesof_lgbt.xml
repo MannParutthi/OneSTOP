@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/black"
+android:padding="16dp"
+tools:context="com.appsplanet.onestop.SubcategoriesofLgbtActivity">
+
+    <include
+        android:id="@+id/layoutHeader"
+        layout="@layout/layout_header"/>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="@dimen/ll_margin_top"
+    android:layout_below="@id/layoutHeader"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkbox_relationship"
+        android:textColor="@color/white"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:layout_marginBottom="3dp"
+        android:button="@drawable/checkbox_custom"
+        android:textSize="@dimen/checkbox_textsize"
+        android:text="@string/relationship"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkbox_noStringsAttached"
+        android:textColor="@color/white"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:layout_marginBottom="3dp"
+        android:button="@drawable/checkbox_custom"
+        android:textSize="@dimen/checkbox_textsize"
+        android:text="@string/noStringsAttached"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkbox_businessProfessionals"
+        android:textColor="@color/white"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:layout_marginBottom="3dp"
+        android:button="@drawable/checkbox_custom"
+        android:textSize="@dimen/checkbox_textsize"
+        android:text="@string/businessProfessional"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkbox_workoutBuddy"
+        android:textColor="@color/white"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:layout_marginBottom="3dp"
+        android:button="@drawable/checkbox_custom"
+        android:textSize="@dimen/checkbox_textsize"
+        android:text="@string/workoutBuddy"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkbox_sugarDaddy"
+        android:textColor="@color/white"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:layout_marginBottom="3dp"
+        android:button="@drawable/checkbox_custom"
+        android:textSize="@dimen/checkbox_textsize"
+        android:text="@string/sugarDaddy"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkbox_sugarMommy"
+        android:textColor="@color/white"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:layout_marginBottom="3dp"
+        android:button="@drawable/checkbox_custom"
+        android:textSize="@dimen/checkbox_textsize"
+        android:text="@string/sugarMommy"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkbox_noPreference"
+        android:textColor="@color/white"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:layout_marginBottom="3dp"
+        android:button="@drawable/checkbox_custom"
+        android:textSize="@dimen/checkbox_textsize"
+        android:text="@string/noPreference"/>
+
+</LinearLayout>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ll"
+    android:id="@+id/txt_createANewGroup"
+    android:text="@string/createANewGroup"
+    android:textColor="@color/white"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="@dimen/txt_createnewgroup_margintop"
+    android:textSize="@dimen/txt_createnewgroup_txtsize"/>
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/txt_createANewGroup"
+    android:id="@+id/edtxt_enterGroupName"
+    android:textSize="@dimen/txt_size_hint"
+    android:textColor="@color/white"
+    android:textColorHint="@color/white"
+    android:textAlignment="center"
+    android:visibility="invisible"
+    android:hint="@string/enterGroupName"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    android:backgroundTint="@color/white"
+    android:textCursorDrawable="@drawable/custom_cursorcolor"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/txt_payToCreateNewGroup"
+    android:text="@string/toCreateNewGroup24.99"
+    android:textColor="@color/white"
+    android:textSize="@dimen/txt_size_hint"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"/>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/edtxt_enterGroupName"
+    android:id="@+id/btn_createGroup"
+    android:background="@drawable/button_rounded"
+    android:text="@string/create"
+    android:textSize="@dimen/txt_size_small"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="70dp"
+    android:layout_marginRight="70dp"
+    android:textColor="@color/white"
+    android:visibility="invisible"
+    android:layout_centerHorizontal="true"/>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btn_SUBMIT"
+    android:layout_centerHorizontal="true"
+    android:visibility="visible"
+    android:layout_above="@id/txt_payToCreateNewGroup"
+    android:background="@drawable/button_rounded"
+    android:text="@string/submit"
+    android:textSize="@dimen/txt_size_small"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:textColor="@color/white"/>
+
+</RelativeLayout>
+

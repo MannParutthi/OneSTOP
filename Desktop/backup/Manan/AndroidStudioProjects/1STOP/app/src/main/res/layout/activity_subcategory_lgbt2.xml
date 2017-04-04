@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_category_screen"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:background="@color/black"
+tools:context="com.appsplanet.onestop.SubcategoryLGBT2Activity">
+
+    <include
+        android:id="@+id/layoutHeader"
+        layout="@layout/layout_header"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/txt_copyright"
+    android:text="@string/copyrightStmt"
+    android:textColor="@color/white"
+    android:textSize="@dimen/txt_size_extra_small"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/layoutHeader"
+    android:layout_above="@id/txt_copyright"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/ll_margin_top">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/myprefrence"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:textSize="@dimen/txt_size"/>
+
+    <RadioGroup
+        android:id="@+id/rdg_selectSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <RadioButton
+            android:id="@+id/rdb_MaleLGBT2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/radiobtn_padding"
+            android:button="@drawable/checkbox_custom"
+            android:text="@string/male"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_hint" />
+
+        <RadioButton
+            android:id="@+id/rdb_FemaleLGBT2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/radiobtn_padding"
+            android:button="@drawable/checkbox_custom"
+            android:text="@string/female"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_hint" />
+        <RadioButton
+            android:id="@+id/rdb_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/radiobtn_padding"
+            android:button="@drawable/checkbox_custom"
+            android:text="@string/top"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_hint" />
+
+        <RadioButton
+            android:id="@+id/rdb_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/radiobtn_padding"
+            android:button="@drawable/checkbox_custom"
+            android:text="@string/bottom"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_hint" />
+        <RadioButton
+            android:id="@+id/rdb_alpha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/radiobtn_padding"
+            android:button="@drawable/checkbox_custom"
+            android:text="@string/alpha"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_hint" />
+
+        <RadioButton
+            android:id="@+id/rdb_dominant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/radiobtn_padding"
+            android:button="@drawable/checkbox_custom"
+            android:text="@string/dominant"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_hint" />
+
+    </RadioGroup>
+
+</LinearLayout>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btn_submitLGBT2"
+    android:layout_above="@id/txt_copyright"
+    android:background="@drawable/button_rounded"
+    android:text="@string/submit"
+    android:textSize="@dimen/txt_size_small"
+    android:textColor="@color/white"
+    android:layout_margin="@dimen/btn_margin" />
+
+</RelativeLayout>

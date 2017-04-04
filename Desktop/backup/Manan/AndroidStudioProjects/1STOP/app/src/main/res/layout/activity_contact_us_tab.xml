@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/black"
+android:padding="10dp"
+tools:context="com.appsplanet.onestop.fragment.ContactUsFragment">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="20dp"
+    android:id="@+id/ll_subject">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lightGray"
+        android:textSize="@dimen/txt_size_small"
+        android:text="@string/subject"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textCursorDrawable="@drawable/custom_cursorcolor"
+        android:id="@+id/edtxt_subject"
+        android:textSize="@dimen/txt_size_small"
+        android:textColorHint="@color/white"
+        android:hint="@string/concerns_unsubscribe"
+        android:backgroundTint="@color/white"
+        android:layout_weight="2"/>
+
+</LinearLayout>
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_below="@id/ll_subject"
+    android:textCursorDrawable="@drawable/custom_cursorcolor"
+    android:gravity="start"
+    android:id="@+id/edtxt_datatobeMailed"
+    android:textSize="@dimen/txt_size_small"
+    android:padding="5dp"
+    android:textColor="@color/lightGray"
+    android:textColorHint="@color/lightGray"
+    android:background="@color/darkBlackGrey"
+    android:hint="@string/typeheretosendmailtoadmin"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+
+<Button
+    android:id="@+id/btn_submitContactUs"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/edtxt_datatobeMailed"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="@dimen/btn_margin"
+    android:textSize="@dimen/txt_size_small"
+    android:background="@drawable/button_rounded"
+    android:text="@string/submit"
+    android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/txtCopyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/copyrightStmt"
+        android:textSize="@dimen/txt_size_extra_small"
+        android:textColor="@color/white" />
+</RelativeLayout>

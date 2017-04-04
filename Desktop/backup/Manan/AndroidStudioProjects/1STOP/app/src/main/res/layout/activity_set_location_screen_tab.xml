@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/black"
+android:padding="10dp"
+tools:context="com.appsplanet.onestop.fragment.SetLocationScreenFragment">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:textSize="@dimen/txt_size"
+    android:text="@string/set_location"
+    android:id="@+id/txt_setlocationSpinner"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="10dp"/>
+
+<Switch
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/switch_setLocation"
+    android:layout_toRightOf="@id/txt_setlocationSpinner"
+    android:layout_alignBottom="@id/txt_setlocationSpinner"
+    android:layout_alignParentRight="true"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="20dp"
+    android:theme="@style/MySwitch"
+    android:button="@drawable/switch_custom"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:textSize="@dimen/txt_size"
+    android:text="@string/my_location"
+    android:id="@+id/txt_mylocationSpinner"
+    android:layout_below="@id/txt_setlocationSpinner"
+    android:layout_marginBottom="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"/>
+
+<Switch
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/switch_myLocation"
+    android:layout_below="@id/switch_setLocation"
+    android:layout_alignParentRight="true"
+    android:layout_alignBaseline="@id/txt_mylocationSpinner"
+    android:layout_marginRight="20dp"
+    android:theme="@style/MySwitch"
+    android:button="@drawable/switch_custom"/>
+
+<RadioGroup
+    android:id="@+id/rdg_selectDistance"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@id/txt_ageConfirm"
+    android:layout_margin="20dp"
+    android:visibility="invisible"
+    android:layout_below="@id/txt_mylocationSpinner">
+
+    <RadioButton
+        android:id="@+id/rdb_10kmorless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:button="@drawable/radiobtn_custom"
+        android:text="@string/_10_km_or_less"
+        android:paddingTop="@dimen/radiobtn_padding"
+        android:paddingBottom="@dimen/radiobtn_padding"
+        android:paddingLeft="10dp"
+        android:paddingRight="@dimen/radiobtn_padding"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/radiobtn_margin_left"
+        android:textSize="@dimen/txt_size_hint" />
+
+    <RadioButton
+        android:id="@+id/rdb_shortDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:button="@drawable/radiobtn_custom"
+        android:text="@string/short_distance_10km_to_250km"
+        android:paddingTop="@dimen/radiobtn_padding"
+        android:paddingBottom="@dimen/radiobtn_padding"
+        android:paddingLeft="10dp"
+        android:paddingRight="@dimen/radiobtn_padding"
+        android:layout_marginLeft="@dimen/radiobtn_margin_left"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_size_hint" />
+
+    <RadioButton
+        android:id="@+id/rdb_longDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:button="@drawable/radiobtn_custom"
+        android:text="@string/long_distance_250km_or_more"
+        android:paddingTop="@dimen/radiobtn_padding"
+        android:paddingBottom="@dimen/radiobtn_padding"
+        android:paddingLeft="10dp"
+        android:paddingRight="@dimen/radiobtn_padding"
+        android:layout_marginLeft="@dimen/radiobtn_margin_left"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_size_hint" />
+
+    <RadioButton
+        android:id="@+id/rdb_alloftheabove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/radiobtn_custom"
+        android:text="@string/all_of_the_above"
+        android:paddingTop="@dimen/radiobtn_padding"
+        android:paddingBottom="@dimen/radiobtn_padding"
+        android:paddingLeft="10dp"
+        android:paddingRight="@dimen/radiobtn_padding"
+        android:layout_marginLeft="@dimen/radiobtn_margin_left"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_size_hint" />
+</RadioGroup>
+
+<Button
+    android:id="@+id/btn_submitSetLocation"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/rdg_selectDistance"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:visibility="invisible"
+    android:textSize="@dimen/txt_size_small"
+    android:background="@drawable/button_rounded"
+    android:text="@string/submit"
+    android:textColor="@color/white" />
+
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="checkbox_margin_bottom">5dp</dimen>
+    <dimen name="checkbox_textsize">16sp</dimen>
+    <dimen name="checkbox_padding">5dp</dimen>
+    <dimen name="btn_margin">20dp</dimen>
+    <dimen name="ll_margin_top">10dp</dimen>
+    <dimen name="ll_padding">10dp</dimen>
+    <dimen name="main_layout_padding">16dp</dimen>
+    <dimen name="txt_size">22sp</dimen>
+    <dimen name="txt_size_extra_small">12sp</dimen>
+    <dimen name="txt_size_hint">16sp</dimen>
+    <dimen name="radiobtn_padding">8dp</dimen>
+    <dimen name="radiobtn_margin_left">10dp</dimen>
+    <dimen name="logo_margin">40dp</dimen>
+    <dimen name="txt_18authenticate_margin_bottom">30dp</dimen>
+    <dimen name="txt_resendpassword_margin_top">40dp</dimen>
+    <dimen name="edtxt_margin">20dp</dimen>
+    <dimen name="txt_forgotpassword_margin_top">40dp</dimen>
+    <dimen name="imgbtn_calendar_heightwidth">45dp</dimen>
+    <dimen name="spinner_txtsize">18dp</dimen>
+    <dimen name="txt_profilepic_margin_top">45dp</dimen>
+    <dimen name="imgbtn_pic_margin">5dp</dimen>
+    <dimen name="img_signin_width">40dp</dimen>
+    <dimen name="img_signin_height">30dp</dimen>
+    <dimen name="img_sigin_margin_top">8dp</dimen>
+    <dimen name="login_ll_margin">40dp</dimen>
+    <dimen name="menulogo_margin">20dp</dimen>
+    <dimen name="txt_createnewgroup_txtsize">24sp</dimen>
+    <dimen name="txt_createnewgroup_margintop">10dp</dimen>
+    <dimen name="txt_size_small">18sp</dimen>
+    <dimen name="menulogo_margin_top">10dp</dimen>
+    <dimen name="imgbtn_back_padding">15dp</dimen>
+    <dimen name="btn_dialog_margin">10dp</dimen>
+    <dimen name="txtsize_cost">28sp</dimen>
+    <dimen name="dialog_margin_top">15dp</dimen>
+    <dimen name="closebtn_heightwidth">40dp</dimen>
+    <dimen name="closebtn_padding">-80dp</dimen>
+    <dimen name="rdgUnsubscribeScreen1">20dp</dimen>
+    <dimen name="rdbUnsubscribeScreen1">10dp</dimen>
+    <dimen name="txtmarginUnsubscribeScreen1">20dp</dimen>
+    <dimen name="btnmarginUnsunscribeScreen2">5dp</dimen>
+</resources>

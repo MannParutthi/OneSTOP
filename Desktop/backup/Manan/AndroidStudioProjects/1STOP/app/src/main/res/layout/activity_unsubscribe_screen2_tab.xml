@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/black"
+android:padding="10dp"
+tools:context="com.appsplanet.onestop.fragment.UnsubscribeScreen2Fragment">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/imgBtn_navigationDrawer"
+    android:textSize="@dimen/txt_size"
+    android:textColor="@color/white"
+    android:layout_marginTop="20dp"
+    android:id="@+id/txt_questionnaire"
+    android:text="@string/questionnaire_for_suspension"
+    android:layout_centerHorizontal="true"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginRight="20dp"
+    android:id="@+id/ll"
+    android:layout_below="@id/txt_questionnaire"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rdg_selectreason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdb_takeabreak"
+        android:textColor="@color/white"
+        android:paddingTop="@dimen/checkbox_padding"
+        android:paddingBottom="@dimen/checkbox_padding"
+        android:paddingLeft="10dp"
+        android:paddingRight="@dimen/checkbox_padding"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5dp"
+        android:button="@drawable/checkbox_custom"
+        android:textSize="@dimen/checkbox_textsize"
+        android:text="@string/wanna_take_a_break"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdb_foundSomeone"
+        android:textColor="@color/white"
+        android:paddingTop="@dimen/checkbox_padding"
+        android:paddingBottom="@dimen/checkbox_padding"
+        android:paddingLeft="10dp"
+        android:paddingRight="@dimen/checkbox_padding"
+        android:layout_marginLeft="20dp"
+        android:button="@drawable/checkbox_custom"
+        android:textSize="@dimen/checkbox_textsize"
+        android:text="@string/did_you_find_someone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_size_small"
+        android:textColor="@color/white"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/let_us_know_so_we_can_feature_your_story"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdb_foundElsewhere"
+        android:textColor="@color/white"
+        android:paddingTop="@dimen/checkbox_padding"
+        android:paddingBottom="@dimen/checkbox_padding"
+        android:paddingLeft="10dp"
+        android:paddingRight="@dimen/checkbox_padding"
+        android:layout_marginLeft="20dp"
+        android:button="@drawable/checkbox_custom"
+        android:textSize="@dimen/checkbox_textsize"
+        android:text="@string/did_you_find_someone_else_where"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_sendmailtoadmintounsubscribe"
+        android:textSize="@dimen/txt_size_small"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        android:paddingLeft="30dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/send_an_email_to_admin_to_unsubscribe_your_account1"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkbox_aknowledgement"
+        android:textColor="@color/white"
+        android:paddingTop="@dimen/checkbox_padding"
+        android:paddingBottom="@dimen/checkbox_padding"
+        android:paddingLeft="10dp"
+        android:paddingRight="@dimen/checkbox_padding"
+        android:layout_marginLeft="20dp"
+        android:button="@drawable/checkbox_custom"
+        android:textSize="@dimen/checkbox_textsize"
+        android:text="@string/i_aknowledge_that_if_i_do_not_send_email_to_unsubscribe_my_account_my_account_will_automatically_re_activated"/>
+
+
+</LinearLayout>
+
+<Button
+    android:id="@+id/btn_submitunsubscribsion"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ll"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="@dimen/btnmarginUnsunscribeScreen2"
+    android:background="@drawable/button_rounded"
+    android:text="@string/submit"
+    android:textSize="@dimen/txt_size_small"
+    android:textColor="@color/white" />
+
+</RelativeLayout>

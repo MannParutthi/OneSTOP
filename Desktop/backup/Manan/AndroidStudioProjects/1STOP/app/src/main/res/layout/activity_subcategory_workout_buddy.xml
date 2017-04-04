@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_registration_screen_one"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:background="@color/black"
+tools:context="com.appsplanet.onestop.SubcategoryWorkoutBuddyActivity">
+
+    <include
+        android:id="@+id/layoutHeader"
+        layout="@layout/layout_header"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/ll_margin_top"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    android:layout_marginBottom="10dp"
+    android:padding="10dp"
+    android:layout_below="@id/layoutHeader"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_size"
+        android:textColor="@color/white"
+        android:text="@string/workoutBuddy"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textCursorDrawable="@drawable/custom_cursorcolor"
+        android:hint="@string/howmanytimesaweek"
+        android:textColor="@color/white"
+        android:layout_marginTop="7dp"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/txt_size_hint"
+        android:id="@+id/edtxt_howManyTimesaWeek"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textCursorDrawable="@drawable/custom_cursorcolor"
+        android:hint="@string/vacinityWhatgyms"
+        android:layout_marginTop="7dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_size_hint"
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        android:id="@+id/edtxt_vacinity"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_selectedOpenToOtherGyms"
+            android:textColor="@color/white"
+            android:layout_marginTop="7dp"
+            android:textSize="@dimen/txt_size_hint"
+            android:paddingRight="8dp"
+            android:text="@string/selectOpenToOtherGyms"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:id="@+id/spinner_openToOtherGyms"
+            android:foregroundTint="@color/white"
+            android:background="@null"
+            android:layout_weight="1"
+            style="@style/spinnerTheme"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_selectedWorkoutLive"
+            android:textColor="@color/white"
+            android:layout_marginTop="7dp"
+            android:textSize="@dimen/txt_size_hint"
+            android:paddingRight="8dp"
+            android:text="@string/selectWorkoutLive"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_workoutLive"
+            android:layout_marginTop="7dp"
+            android:foregroundTint="@color/white"
+            android:background="@null"
+            android:layout_weight="1"
+            style="@style/spinnerTheme"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/white"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_SubmitWorkoutBuddy"
+        android:background="@drawable/button_rounded"
+        android:text="@string/submit"
+        android:textSize="@dimen/txt_size_small"
+        android:textColor="@color/white"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/txt_copyright"
+    android:text="@string/copyrightStmt"
+    android:textSize="@dimen/txt_size_extra_small"
+    android:textColor="@color/white"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
