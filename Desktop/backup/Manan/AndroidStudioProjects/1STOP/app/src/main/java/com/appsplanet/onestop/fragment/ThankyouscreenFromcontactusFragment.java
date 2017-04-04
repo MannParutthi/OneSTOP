@@ -20,7 +20,7 @@ public class ThankyouscreenFromcontactusFragment extends Fragment implements Vie
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_thankyouscreen_fromcontactus_tab, container, false);
+        View view = inflater.inflate(R.layout.fragment_thankyouscreen_fromcontactus, container, false);
 
         mbtnHome = (Button) view.findViewById(R.id.btn_home);
         mtxtThankyouMsg = (TextView) view.findViewById(R.id.txt_thankyouMsg);

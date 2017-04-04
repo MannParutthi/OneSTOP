@@ -19,7 +19,7 @@ public class ContactUsFragment extends Fragment implements View.OnClickListener{
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_contact_us_tab, container, false);
+        View view = inflater.inflate(R.layout.fragment_contact_us, container, false);
 
         ((DrawerMainScreenActivity) getActivity()).setMtxtTabTitle("CONTACT US");
 

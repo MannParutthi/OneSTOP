@@ -17,7 +17,7 @@ public class PrivacyFragment extends Fragment implements View.OnClickListener{
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_privacy_tab, container, false);
+        View view = inflater.inflate(R.layout.fragment_privacy_tab, container, false);
 
         mbtnClose = (Button) view.findViewById(R.id.btn_closePrivacyTab);
 

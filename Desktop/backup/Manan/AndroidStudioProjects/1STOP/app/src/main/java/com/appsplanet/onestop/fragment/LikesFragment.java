@@ -21,7 +21,7 @@ public class LikesFragment extends Fragment implements View.OnClickListener{
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_likes_tab, container, false);
+        View view = inflater.inflate(R.layout.fragment_likes, container, false);
 
         mlistViewLikes = (ListView) view.findViewById(R.id.listview_likes);
         msearchView = (SearchView) view.findViewById(R.id.searchView);

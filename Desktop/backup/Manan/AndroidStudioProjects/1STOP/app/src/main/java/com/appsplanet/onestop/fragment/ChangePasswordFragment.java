@@ -21,7 +21,7 @@ public class ChangePasswordFragment extends Fragment implements View.OnClickList
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_change_password_tab, container, false);
+        View view = inflater.inflate(R.layout.fragment_change_password, container, false);
 
         ((DrawerMainScreenActivity) getActivity()).setMtxtTabTitle("CHANGE PASSWORD");
 

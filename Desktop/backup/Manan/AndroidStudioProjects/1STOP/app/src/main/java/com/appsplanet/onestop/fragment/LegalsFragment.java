@@ -21,7 +21,7 @@ public class LegalsFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_legals_tab, container, false);
+        View view = inflater.inflate(R.layout.fragment_legals_tab, container, false);
 
         ((DrawerMainScreenActivity) getActivity()).setMtxtTabTitle("LEGALS");
 

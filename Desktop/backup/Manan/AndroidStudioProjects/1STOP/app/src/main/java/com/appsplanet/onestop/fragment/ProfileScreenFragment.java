@@ -27,7 +27,7 @@ public class ProfileScreenFragment extends Fragment implements View.OnClickListe
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_profile_screen_tab, container, false);
+        View view = inflater.inflate(R.layout.fragment_profile_screen, container, false);
 
         mtabLayout = (TabLayout) view.findViewById(R.id.tab_layout);
         mviewPager = (ViewPager) view.findViewById(R.id.vpager);

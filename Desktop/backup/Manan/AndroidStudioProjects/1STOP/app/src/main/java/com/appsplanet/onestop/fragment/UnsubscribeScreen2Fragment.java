@@ -23,7 +23,7 @@ public class UnsubscribeScreen2Fragment extends Fragment implements View.OnClick
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_unsubscribe_screen2_tab, container, false);
+        View view = inflater.inflate(R.layout.fragment_unsubscribe_screen2, container, false);
 
         mrdbTakeabreak = (RadioButton) view.findViewById(R.id.rdb_takeabreak);
         mrdbFoundsomeone = (RadioButton) view.findViewById(R.id.rdb_foundSomeone);

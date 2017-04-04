@@ -26,7 +26,7 @@ public class MappingScreenFragment extends Fragment implements View.OnClickListe
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_mapping_screen_tab, container, false);
+        View view = inflater.inflate(R.layout.fragment_mapping_screen, container, false);
 
         ((DrawerMainScreenActivity) getActivity()).setMtxtTabTitle("MAPPING");
 

@@ -21,7 +21,7 @@ public class UnsubscribeScreen1Fragment extends Fragment implements View.OnClick
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_unsubscribe_screen1_tab, container, false);
+        View view = inflater.inflate(R.layout.fragment_unsubscribe_screen1, container, false);
 
         ((DrawerMainScreenActivity) getActivity()).setMtxtTabTitle("UNSUBSCRIBE");
 

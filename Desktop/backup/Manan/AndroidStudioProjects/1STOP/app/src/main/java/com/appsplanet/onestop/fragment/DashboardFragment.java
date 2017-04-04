@@ -25,7 +25,7 @@ public class DashboardFragment extends Fragment implements View.OnClickListener{
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_dashboard_tab, container, false);
+        View view = inflater.inflate(R.layout.fragment_dashboard, container, false);
 
         ((DrawerMainScreenActivity) getActivity()).setMtxtTabTitle("LETS CONNECT");
 

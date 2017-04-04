@@ -17,7 +17,7 @@ public class LogOutFragment extends Fragment implements View.OnClickListener{
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_log_out_tab, container, false);
+        View view = inflater.inflate(R.layout.fragment_log_out, container, false);
 
         ((DrawerMainScreenActivity) getActivity()).setMtxtTabTitle("LOGOUT");
 

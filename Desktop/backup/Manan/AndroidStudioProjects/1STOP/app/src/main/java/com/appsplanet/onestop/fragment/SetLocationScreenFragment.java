@@ -22,7 +22,7 @@ public class SetLocationScreenFragment extends Fragment implements View.OnClickL
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_set_location_screen_tab, container, false);
+        View view = inflater.inflate(R.layout.fragment_set_location_screen, container, false);
 
         mswitchSetLocation = (Switch) view.findViewById(R.id.switch_setLocation);
         mswitchMyLocation = (Switch) view.findViewById(R.id.switch_myLocation);

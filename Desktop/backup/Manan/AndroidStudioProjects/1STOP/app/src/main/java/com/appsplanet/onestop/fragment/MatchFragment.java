@@ -22,7 +22,7 @@ public class MatchFragment extends Fragment implements View.OnClickListener{
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_match_tab, container, false);
+        View view = inflater.inflate(R.layout.fragment_match, container, false);
 
         mlistViewMatch = (ListView) view.findViewById(R.id.listview_match);
         msearchView = (SearchView) view.findViewById(R.id.searchView);

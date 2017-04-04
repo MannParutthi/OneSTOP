@@ -23,7 +23,7 @@ public class AcceptanceScreenFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_acceptance_screen_tab, container, false);
+        View view = inflater.inflate(R.layout.fragment_acceptance_screen, container, false);
 
 
         mbtnChat = (Button) view.findViewById(R.id.btn_chat);
